@@ -1,9 +1,10 @@
 <?php
-require_once __DIR__ . '/Category.php';
+require_once 'AnimalTrait.php';
 
-class Dogs extends Category
+
+class Dogs
 {
-
+    use AnimalTrait;
     public function __construct(string $taglia, int $eta, bool $sterilizzato)
     {
 

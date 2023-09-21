@@ -1,10 +1,8 @@
 <?php
-require_once __DIR__ . '/Category.php';
-
-class Cats extends Category
+class Cats
 {
-
-    public function __construct($taglia, $eta, $sterilizzato)
+    use AnimalTrait;
+    public function __construct(string $taglia, int $eta, bool $sterilizzato)
     {
 
         $this->icon = '<i class="fa-solid fa-cat"></i>';

@@ -6,6 +6,12 @@ require_once __DIR__ . '/classes/Foods.php';
 require_once __DIR__ . '/classes/Toys.php';
 require_once __DIR__ . '/products.php';
 
+try {
+} catch (AnimalShopException $e) {
+    echo "Errore nell'AnimalShop: " . $e->getMessage();
+} catch (Exception $e) {
+    echo "Errore generico: " . $e->getMessage();
+}
 ?>
 
 <!DOCTYPE html>
